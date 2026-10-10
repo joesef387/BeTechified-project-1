@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Insurance claims summary placeholder">
+  <rect width="800" height="500" fill="#d7b6c2"/>
+  <g fill="#f8f1ea">
+    <rect x="90" y="240" width="120" height="180" rx="14"/>
+    <rect x="240" y="180" width="120" height="240" rx="14"/>
+    <rect x="390" y="120" width="120" height="300" rx="14"/>
+    <rect x="540" y="200" width="120" height="220" rx="14"/>
+  </g>
+  <g stroke="#2f4e68" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M120 260C145 220 180 200 220 210"/>
+    <path d="M270 200C300 160 345 150 380 170"/>
+    <path d="M420 140C456 120 490 120 520 145"/>
+    <path d="M570 220C600 200 635 205 660 240"/>
+  </g>
+  <text x="280" y="430" fill="#2f4e68" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700">Claims overview</text>
+</svg>

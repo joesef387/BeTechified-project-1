@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Mortality analysis chart placeholder">
+  <rect width="800" height="500" fill="#d7b6c2"/>
+  <g fill="#f8f1ea">
+    <rect x="70" y="300" width="100" height="130" rx="10"/>
+    <rect x="190" y="260" width="100" height="170" rx="10"/>
+    <rect x="310" y="220" width="100" height="210" rx="10"/>
+    <rect x="430" y="160" width="100" height="270" rx="10"/>
+    <rect x="550" y="110" width="100" height="320" rx="10"/>
+    <rect x="670" y="70" width="100" height="360" rx="10"/>
+  </g>
+  <path d="M70 360L190 330L310 280L430 240L550 175L670 110L770 70" fill="none" stroke="#2f4e68" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#2f4e68" font-family="Segoe UI, sans-serif" font-size="24">
+    <text x="100" y="455">20</text>
+    <text x="220" y="455">30</text>
+    <text x="340" y="455">40</text>
+    <text x="460" y="455">50</text>
+    <text x="580" y="455">60</text>
+    <text x="700" y="455">70</text>
+  </g>
+</svg>
