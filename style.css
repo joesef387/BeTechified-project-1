@@ -1,21 +1,21 @@
 /* =========================================================
    PALETTE
-   Peach  #fdbe83  | Mauve #c8a3b5 | Deep blue #2f4e68
+   Teal #65c7b4 | Sage #a7c4bc | Deep teal #183b4e
    ========================================================= */
 
 :root {
-  --peach: #fdbe83;
-  --mauve: #c8a3b5;
-  --blue: #2f4e68;
+  --peach: #65c7b4;
+  --mauve: #a7c4bc;
+  --blue: #183b4e;
 
-  --bg: #fff7ee;          /* very light tint of the peach */
+  --bg: #f4f8f7;
   --surface: #ffffff;
-  --text: #2f4e68;
-  --text-soft: #4d6a82;
-  --border: #e6d3db;      /* light tint of the mauve */
-  --accent: #fdbe83;
-  --on-accent: #2f4e68;
-  --shadow: 0 6px 20px rgba(47, 78, 104, 0.12);
+  --text: #183b4e;
+  --text-soft: #536c73;
+  --border: #dce8e5;
+  --accent: #65c7b4;
+  --on-accent: #123344;
+  --shadow: 0 6px 20px rgba(24, 59, 78, 0.12);
 
   --radius: 12px;
   --max-width: 1100px;
@@ -24,11 +24,11 @@
 
 /* Dark mode: script.js sets data-theme="dark" on <html> */
 [data-theme="dark"] {
-  --bg: #1c3040;
-  --surface: #2f4e68;
-  --text: #fdf1e3;
-  --text-soft: #d8c5cf;
-  --border: #46647e;
+  --bg: #142a35;
+  --surface: #203d49;
+  --text: #edf6f3;
+  --text-soft: #c0d2ce;
+  --border: #3b5a63;
   --shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
@@ -50,7 +50,7 @@ html {
 
 body {
   font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
-  background: linear-gradient(180deg, #f7f1ea 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #edf4f2 0%, var(--bg) 100%);
   color: var(--text);
   line-height: 1.65;
   transition: background 0.3s ease, color 0.3s ease;
@@ -118,18 +118,18 @@ h1, h2, h3 {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--peach), #f7c98d);
+  background: linear-gradient(135deg, var(--peach), #8bd8c4);
   color: var(--on-accent);
-  box-shadow: 0 10px 18px rgba(253, 190, 131, 0.34);
+  box-shadow: 0 10px 18px rgba(101, 199, 180, 0.28);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 24px rgba(47, 78, 104, 0.18);
+  box-shadow: 0 14px 24px rgba(24, 59, 78, 0.18);
 }
 
 .btn-secondary {
-  border-color: rgba(200, 163, 181, 0.8);
+  border-color: rgba(167, 196, 188, 0.8);
   color: var(--text);
   background: rgba(255, 255, 255, 0.38);
 }
@@ -146,7 +146,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(47, 78, 104, 0.96);
+  background: rgba(24, 59, 78, 0.96);
   color: #fff;
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -323,7 +323,7 @@ h1, h2, h3 {
   font-size: 1.4rem;
   font-weight: 600;
   display: inline-block;
-  background: linear-gradient(135deg, rgba(253,190,131,0.9), rgba(200,163,181,0.9));
+  background: linear-gradient(135deg, rgba(101,199,180,0.9), rgba(167,196,188,0.9));
   color: var(--blue);
   padding: 0.2rem 0.9rem;
   border-radius: 8px;
@@ -368,14 +368,14 @@ h1, h2, h3 {
 }
 
 .about-facts {
-  background: linear-gradient(180deg, var(--surface), rgba(255,255,255,0.96));
+  background: var(--surface);
   border: 1px solid var(--border);
   border-left: 6px solid var(--mauve);
   border-radius: var(--radius);
   padding: 1.5rem;
   display: grid;
   gap: 0.75rem;
-  box-shadow: 0 14px 30px rgba(47, 78, 104, 0.08);
+  box-shadow: 0 14px 30px rgba(24, 59, 78, 0.08);
 }
 
 /* =========================================================
@@ -474,14 +474,14 @@ h1, h2, h3 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(47, 78, 104, 0.08);
+  box-shadow: 0 12px 28px rgba(24, 59, 78, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 18px 30px rgba(47, 78, 104, 0.18);
-  border-color: rgba(200, 163, 181, 0.8);
+  box-shadow: 0 18px 30px rgba(24, 59, 78, 0.18);
+  border-color: rgba(167, 196, 188, 0.8);
 }
 
 .project-card img {
@@ -545,11 +545,11 @@ h1, h2, h3 {
    ========================================================= */
 .contact-form {
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.72);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
-  box-shadow: 0 14px 28px rgba(47, 78, 104, 0.08);
+  box-shadow: 0 14px 28px rgba(24, 59, 78, 0.08);
 }
 
 .form-group {
@@ -619,7 +619,7 @@ h1, h2, h3 {
    FOOTER
    ========================================================= */
 .site-footer {
-  background: linear-gradient(180deg, var(--blue), #1f3d53);
+  background: linear-gradient(180deg, var(--blue), #102d3d);
   color: #fff;
   padding: 2rem 1.25rem;
   text-align: center;
